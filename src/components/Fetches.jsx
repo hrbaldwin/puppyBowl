@@ -2,21 +2,18 @@ import React, { useState, useEffect } from "react";
 
 // const Fetches = () => {
 
-  
-   export async function fetchPuppies() {
-      
-      try {
-        const fetchedPuppies = await fetch(
-          "https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players"
-        );
-        const puppies = await fetchedPuppies.json();
-        const puppiesData = puppies.data.players;
-        return puppiesData
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
+export async function fetchPuppies() {
+  try {
+    const fetchedPuppies = await fetch(
+      "https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players"
+    );
+    const puppies = await fetchedPuppies.json();
+    const puppiesData = puppies.data.players;
+    return puppiesData;
+  } catch (err) {
+    console.error(err);
+  }
+}
 
 // export async function singlePuppy() {
 //   try {
