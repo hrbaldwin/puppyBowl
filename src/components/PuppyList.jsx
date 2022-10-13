@@ -7,7 +7,16 @@ const PuppyList = (props) => {
 
 
   return <div className="container">
-    <div>{gotPuppies.map((puppy, index) => {console.log(puppy)})}</div>
+    {gotPuppies.map((puppy, index) => {
+      console.log(puppy.imageUrl)
+      return (
+      <div className= "puppyCard" key={`puppy-${index}`}>
+        <span>{puppy.name}</span> <span>#{puppy.id}</span>
+        <img className="puppyPic" src= {puppy.imageUrl} />
+      </div>
+      )
+    })
+    }
  </div>
 
 
