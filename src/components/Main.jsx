@@ -1,25 +1,13 @@
 import React from "react";
 import {Navbar} from "./"
+import {fetchPuppies} from "./"
+import { singlePuppy } from "./";
+import { puppyTeam } from "./";
 
 const Main = () => {
-  
-async function fetchPuppies () {
-  try {
-    let playerId = 7441
-    const fetchedPuppies = await fetch('https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players');
-    const puppies = await fetchedPuppies.json();
-    const fetchOnePuppy = await fetch(`https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players/${playerId}`)
-        const puppyData = await fetchOnePuppy.json();
-    const onePuppy = puppyData.data.player
-  } catch (err) {
-    console.error(err);
-  }
-}
-fetchPuppies() 
-
-
-  
-  
+  fetchPuppies();
+ singlePuppy();
+ puppyTeam();
   
   return (
     <div id="main">
