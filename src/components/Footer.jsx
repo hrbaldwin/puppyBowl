@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <div className="eachOfOurDogs">
         <div>Rebecca's Dog</div>
-        <img src={require(".Dog.jpeg")} className="ourDogs" />
+        <img src={require("./Dog.jpeg")} className="ourDogs" />
       </div>
       <div className="eachOfOurDogs">
         <div>Hiro</div>

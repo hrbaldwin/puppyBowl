@@ -44,6 +44,11 @@ body {
   padding: 1.5%;
 }
 
+#puppyName {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 .puppyPic {
   max-width: 90%;
 }
@@ -64,9 +69,11 @@ body {
 .eachOfOurDogs {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .ourDogs {
   max-height: 50px;
+  max-width: 50px;
   border-radius: 100%;
 }
