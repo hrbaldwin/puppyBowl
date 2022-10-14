@@ -3,6 +3,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
+  background-image: url("https://media.istockphoto.com/vectors/animal-paw-seamless-pattern-vector-id1005886450?b=1&k=20&m=1005886450&s=612x612&w=0&h=W9B69r8Rx_z--u8-TU9dIfu9gtQsCm5DC0Zq3cxhzNM=");
 }
 
 .main {
@@ -35,6 +36,7 @@ body {
   padding-bottom: 10px;
   overflow: auto;
   flex-grow: 2;
+  
 }
 
 #singlePuppy {
@@ -72,7 +74,7 @@ body {
   align-items: center;
   padding: 1.5%;
   box-shadow: 8px 11px 8px -2px #888888;
-  background-color: rgba(239, 203, 139, 0.2);
+  background-color: rgba(237, 226, 206);
 }
 
 #puppyName {
@@ -135,6 +137,7 @@ button :hover {
   border-radius: 10px;
   padding: 4px;
   max-height: 35px;
+  background-color: white;
 }
 input {
   display: flex;
