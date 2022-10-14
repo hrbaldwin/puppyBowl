@@ -23,8 +23,8 @@ const SinglePuppy = () => {
       <Navbar />
       <div id= "singlePuppy">
       {gotSinglePuppy.id ?
-        <div><button><Link to='/'>Go Back to All Puppies</Link></button>
-          <ul>{gotSinglePuppy.name}
+        <div id= "onePup"><div id= "buttonAndList"><button><Link to='/'>Go Back to All Puppies</Link></button>
+          <ul><span id="doggyName">{gotSinglePuppy.name}</span>
           <li><b>ID: </b>{gotSinglePuppy.id}</li>
           <li><b>Breed: </b>{gotSinglePuppy.breed}</li>
           <li><b>Status: </b>{gotSinglePuppy.status}</li>
@@ -35,8 +35,8 @@ const SinglePuppy = () => {
             )
           })}
             </ul></li>
-          </ul>
-          <img className="puppyPic" src={gotSinglePuppy.imageUrl} />
+          </ul></div>
+          <img id="pupPortrait" className="puppyPic" src={gotSinglePuppy.imageUrl} />
     </div>: <div>Retrieving your Retriever</div>}</div>
     <Footer />
     </div>
