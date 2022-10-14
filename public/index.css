@@ -3,7 +3,9 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background-image: url("https://media.istockphoto.com/vectors/animal-paw-seamless-pattern-vector-id1005886450?b=1&k=20&m=1005886450&s=612x612&w=0&h=W9B69r8Rx_z--u8-TU9dIfu9gtQsCm5DC0Zq3cxhzNM=");
+  background-image: url("https://i.imgur.com/3YHd0Po.jpeg");
+  background-repeat: repeat;
+  background-size: 400px;
 }
 
 .main {
