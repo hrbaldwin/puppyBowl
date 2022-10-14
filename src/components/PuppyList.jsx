@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 
 const PuppyList = (props) => {
   const gotPuppies = props.gotPuppies;
-  const setGotPuppies = props.setGotPuppies;
-{console.log(gotPuppies)}
+
+
   return (
     <div className="container">
       {gotPuppies.map((puppy, index) => {

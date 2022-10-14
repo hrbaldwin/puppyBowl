@@ -10,6 +10,7 @@ import {SearchBar} from './'
 
 const Main = () => {
   const [gotPuppies, setGotPuppies] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,12 +22,22 @@ const Main = () => {
     // fetchPuppies().then((puppies) => {setGotPuppies(puppies)})
   }, []);
 
+  function filterPuppyData() {
+    if (!searchInput){
+      return gotPuppies
+    } else{
+    let filteredPuppies = gotPuppies.filter((puppy)=>{
+      return puppy.name.toLowerCase() === searchInput.toLowerCase()
+    })
+    return filteredPuppies
+  }};
+
   return (
     <div className="main">
       <Navbar />
-      <SearchBar />
+      <SearchBar gotPuppies={gotPuppies} setSearchInput={setSearchInput}/>
       {gotPuppies ? (
-        <PuppyList gotPuppies={gotPuppies} />
+        <PuppyList gotPuppies={filterPuppyData()} />
       ) : (
         <div>Loading...</div>
       )}
