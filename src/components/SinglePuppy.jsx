@@ -20,7 +20,7 @@ const SinglePuppy = () => {
     return (
       <div id= "singlePuppy">
       {gotSinglePuppy.id ?
-        <div><button><Link to='/puppybowl'>Go Back to All Puppies</Link></button>
+        <div><button><Link to='/'>Go Back to All Puppies</Link></button>
           <ul>{gotSinglePuppy.name}
           <li>ID: {gotSinglePuppy.id}</li>
           <li>Breed: {gotSinglePuppy.breed}</li>
