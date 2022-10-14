@@ -17,18 +17,19 @@ const SinglePuppy = () => {
   
     return (
       <div id= "singlePuppy">
-          <ol>{gotSinglePuppy.name}
-          <li>{gotSinglePuppy.id}</li>
-          <li>{gotSinglePuppy.breed}</li>
-          <li>{gotSinglePuppy.status}</li>
-          <li><ol>{gotSinglePuppy.team}
+          <ul>{gotSinglePuppy.name}
+          <li>ID: {gotSinglePuppy.id}</li>
+          <li>Breed: {gotSinglePuppy.breed}</li>
+          <li>Status: {gotSinglePuppy.status}</li>
+          <li><ul>Team: {gotSinglePuppy.teamId}
           {gotSinglePuppy.team.map(()=> {
             return (
                 <li>{gotSinglePuppy.team.name}</li>
             )
           })}
-            </ol></li>
-          </ol>
+            </ul></li>
+          </ul>
+          <img className="puppyPic" src={gotSinglePuppy.imageUrl} />
     </div>
     );
   };
