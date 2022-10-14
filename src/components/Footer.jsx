@@ -13,8 +13,8 @@ const Footer = () => {
         <h2>Inspired by our puppies:</h2>
       </div>
       <div className="eachOfOurDogs">
-        <div>Rebecca's Dog</div>
-        <img src={require("./Dog.jpeg")} className="ourDogs" />
+        <div>Tucker</div>
+        <img src={require("./Tucker.jpeg")} className="ourDogs" />
       </div>
       <div className="eachOfOurDogs">
         <div>Hiro</div>

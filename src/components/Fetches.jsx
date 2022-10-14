@@ -15,18 +15,18 @@ export async function fetchPuppies() {
   }
 }
 
-// export async function singlePuppy() {
-//   try {
-//     const fetchOnePuppy = await fetch(
-//       `https://fsa-puppy-bowl.herokuapp. com/api/2209-FTB-ET-WEB-FT/players/${playerId}`
-//     );
-//     const puppyData = await fetchOnePuppy.json();
-//     const onePuppy = puppyData.data.player;
-//     console.log(onePuppy);
-//   } catch (err) {
-//     console.error(err);
-//   }
-// }
+export async function singlePuppy() {
+  try {
+    const fetchOnePuppy = await fetch(
+      `https://fsa-puppy-bowl.herokuapp. com/api/2209-FTB-ET-WEB-FT/players/${playerId}`
+    );
+    const puppyData = await fetchOnePuppy.json();
+    const onePuppy = puppyData.data.player;
+    console.log(onePuppy);
+  } catch (err) {
+    console.error(err);
+  }
+}
 
 // export async function puppyTeam() {
 //   try {
