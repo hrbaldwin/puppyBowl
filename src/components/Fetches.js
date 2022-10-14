@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-
 // const Fetches = () => {
 
 export async function fetchPuppies() {
@@ -15,14 +13,14 @@ export async function fetchPuppies() {
   }
 }
 
-export async function singlePuppy() {
+export async function singlePuppy(playerId) {
   try {
     const fetchOnePuppy = await fetch(
-      `https://fsa-puppy-bowl.herokuapp. com/api/2209-FTB-ET-WEB-FT/players/${playerId}`
+      `https://fsa-puppy-bowl.herokuapp.com/api/2209-FTB-ET-WEB-FT/players/${playerId}`
     );
     const puppyData = await fetchOnePuppy.json();
     const onePuppy = puppyData.data.player;
-    console.log(onePuppy);
+    return(onePuppy);
   } catch (err) {
     console.error(err);
   }

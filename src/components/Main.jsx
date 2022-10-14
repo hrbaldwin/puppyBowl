@@ -5,6 +5,7 @@ import { fetchPuppies } from "./";
 // import { puppyTeam } from "./";
 import { PuppyList } from "./";
 import { Footer } from "./";
+import {Link} from 'react-router-dom';
 
 const Main = () => {
   const [gotPuppies, setGotPuppies] = useState([]);
