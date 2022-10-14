@@ -71,6 +71,8 @@ body {
   max-width: 250px;
   align-items: center;
   padding: 1.5%;
+  box-shadow: 8px 11px 8px -2px #888888;
+  background-color: rgba(239, 203, 139, 0.2);
 }
 
 #puppyName {
@@ -83,7 +85,8 @@ body {
 }
 
 #footer {
-  font-family: "Poller One", Arial, sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+
   max-height: 15%;
   background-color: #222222;
   color: white;
@@ -124,4 +127,20 @@ a {
 button :hover {
   box-shadow: 0 0.5em 0.5em -0.4em
 }
-
+#searchBar {
+  display: flex;
+  flex-grow: 1;
+  margin: 20px;
+  border: 2px solid rgba(1,134,195,255);
+  border-radius: 10px;
+  padding: 4px;
+}
+input {
+  display: flex;
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+}
+#lookingGlass {
+  max-height: 30px;
+}

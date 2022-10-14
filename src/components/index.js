@@ -6,3 +6,4 @@ export {singlePuppy as singlePuppy} from "./Fetches"
 export {default as PuppyList} from "./PuppyList"
 export {default as Footer} from './Footer'
 export {default as SinglePuppy} from './SinglePuppy'
+export {default as SearchBar} from './Search'

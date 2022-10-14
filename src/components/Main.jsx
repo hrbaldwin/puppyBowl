@@ -6,6 +6,7 @@ import { fetchPuppies } from "./";
 import { PuppyList } from "./";
 import { Footer } from "./";
 import {Link} from 'react-router-dom';
+import {SearchBar} from './'
 
 const Main = () => {
   const [gotPuppies, setGotPuppies] = useState([]);
@@ -23,6 +24,7 @@ const Main = () => {
   return (
     <div className="main">
       <Navbar />
+      <SearchBar />
       {gotPuppies ? (
         <PuppyList gotPuppies={gotPuppies} />
       ) : (
