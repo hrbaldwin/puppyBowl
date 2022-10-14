@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-#main {
+.main {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -24,6 +24,18 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+  flex-grow: 2;
+}
+
+#singlePuppy {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

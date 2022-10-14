@@ -21,7 +21,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div id="main">
+    <div className="main">
       <Navbar />
       {gotPuppies ? (
         <PuppyList gotPuppies={gotPuppies} />
